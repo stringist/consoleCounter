@@ -2,7 +2,7 @@
 
 let numbers = [0];
 const max = 9;
-
+console.log(numbers);
 count();
 
 // function count() {
@@ -15,11 +15,11 @@ count();
 //     } else count();
 // }
 function count() {
-
+    console.log(numbers);
     numbers.forEach(function(number) { numbers.push(number++); })
     if (numbers.length <= max) {
         setTimeout(console.log(numbers), 1000);
     }
     console.log(numbers);
-    count();
+    // count();
 }
